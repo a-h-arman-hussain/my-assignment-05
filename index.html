@@ -26,10 +26,14 @@
     <!-- header section -->
     <header class="">
       <!-- navbar -->
-      <nav class="flex justify-between py-2 md:px-[50px]">
+      <nav class="flex justify-between py-2 px-2 md:px-[50px]">
         <!-- nav left -->
         <div class="nav-left flex items-center gap-2">
-          <img src="./assets/logo.png" alt="" class="w-[30px] h-[30px] md:w-[50px] md:h-[50px]" />
+          <img
+            src="./assets/logo.png"
+            alt=""
+            class="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
+          />
           <h1 class="text-sm md:text-2xl font-bold text-[#006747]">
             Emergency <br />
             Service
@@ -40,19 +44,31 @@
           <div
             class="flex items-center justify-center gap-2 bg-[#41ff6b1a] rounded-[50px] p-[12px] w-[60px] h-[25px] md:w-[123px] md:h-[52px]"
           >
-            <h1 class="text-[16px] font-bold"><span>0</span></h1>
-            <img src="./assets/heart.png" alt="" class="w-[18px] h-[18px] md:w-[23px] md:h-[23px]" />
+            <h1 class="text-[16px] font-bold">
+              <span id="count-element">0</span>
+            </h1>
+            <img
+              src="./assets/heart.png"
+              alt=""
+              class="w-[18px] h-[18px] md:w-[23px] md:h-[23px]"
+            />
           </div>
           <div
             class="flex items-center justify-center gap-2 bg-[#41ff6b1a] rounded-[50px] p-[12px] w-[60px] h-[25px] md:w-[123px] md:h-[52px]"
           >
-            <h1 class="text-[16px] font-bold"><span>100</span></h1>
-            <img src="./assets/coin.png" alt="" class="w-[18px] h-[18px] md:w-[23px] md:h-[23px]" />
+            <h1 class="text-[16px] font-bold">
+              <span id="coin-element">100</span>
+            </h1>
+            <img
+              src="./assets/coin.png"
+              alt=""
+              class="w-[18px] h-[18px] md:w-[23px] md:h-[23px]"
+            />
           </div>
           <h1
             class="text-[14px] font-semibold md:text-[16px] md:font-bold flex items-center justify-center gap-2 text-white bg-[#00a63e] rounded-[50px] p-[12px] w-[60px] h-[25px] md:w-[123px] md:h-[52px]"
           >
-            <span>2</span> Copy
+            <span id="copy-count">0</span> Copy
           </h1>
         </div>
       </nav>
@@ -60,20 +76,26 @@
       <section
         class="bg-gradient-to-l from-[#013223] via-[#006747] to-[#013223] flex flex-col items-center text-center py-[12px] md:px-[60px]"
       >
-        <img src="./assets/logo-dark.png" alt="" class="w-[60px] h-[60px] md:w-[92px] md:h-[92px]" />
+        <img
+          src="./assets/logo-dark.png"
+          alt=""
+          class="w-[60px] h-[60px] md:w-[92px] md:h-[92px]"
+        />
         <h1 class="text-white text-[25px] md:text-[35px] font-bold mt-3">
           জরুরি সেবা ডিরেক্টরি
         </h1>
-        <p class="text-white  px-2 my-3">
+        <p class="text-white px-2 my-3">
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </p>
       </section>
     </header>
     <!-- main section -->
-    <main class="bg-[#41ff6b1a] px-5 md:px-10 mx-auto md:grid grid-cols-12 gap-5">
+    <main
+      class="bg-[#41ff6b1a] px-5 py-5 md:px-10 mx-auto md:grid grid-cols-12 gap-5"
+    >
       <!-- main left -->
-      <div class="card-container  py-10 gap-4 col-span-9 grid  md:grid-cols-3 ">
+      <div class="card-container py-10 gap-4 col-span-9 grid md:grid-cols-3">
         <!-- card 1 -->
         <div class="p-4 bg-white rounded-[12px]">
           <div class="flex justify-between">
@@ -96,15 +118,17 @@
                 সার্বজনীন
               </p>
             </div>
-            <div class="card-right w-[24px] h-[24px]">
-              <i class="fa-regular fa-heart"></i>
+            <div class="card-right w-[24px] h-[24px] love-btn">
+              <i class="fa-regular fa-heart heart" ></i>
             </div>
           </div>
           <div class="flex gap-2 mt-4">
-            <button class="btn w-1/2 border-2 border-[#d4d6d5] bg-white">
+            <button
+              class="btn w-1/2 border-2 border-[#d4d6d5] bg-white copy-btn"
+            >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn w-1/2 bg-[#00a63e] text-white">
+            <button class="btn w-1/2 bg-[#00a63e] text-white call-btn">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -122,7 +146,7 @@
                   class="w-[32px] h-[32px]"
                 />
               </div>
-              <h1 class="text-[24px] font-bold mt-2">পুলিশ</h1>
+              <h1 class="text-[24px] font-bold mt-2 caller-name">পুলিশ</h1>
               <p class="text-[#5c5c5c]">Police</p>
               <h1 class="text-[32px] font-bold mt-6">999</h1>
               <p
@@ -131,15 +155,17 @@
                 পুলিশ
               </p>
             </div>
-            <div class="card-right w-[24px] h-[24px]">
-              <i class="fa-regular fa-heart"></i>
+            <div class="card-right w-[24px] h-[24px] love-btn">
+              <i class="fa-regular fa-heart heart"></i>
             </div>
           </div>
           <div class="flex gap-2 mt-4">
-            <button class="btn w-1/2 border-2 border-[#d4d6d5] bg-white">
+            <button
+              class="btn w-1/2 border-2 border-[#d4d6d5] bg-white copy-btn"
+            >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn w-1/2 bg-[#00a63e] text-white">
+            <button class="btn w-1/2 bg-[#00a63e] text-white call-btn">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -166,15 +192,17 @@
                 ফায়ার
               </p>
             </div>
-            <div class="card-right w-[24px] h-[24px]">
-              <i class="fa-regular fa-heart"></i>
+            <div class="card-right w-[24px] h-[24px] love-btn">
+              <i class="fa-regular fa-heart heart"></i>
             </div>
           </div>
           <div class="flex gap-2 mt-4">
-            <button class="btn w-1/2 border-2 border-[#d4d6d5] bg-white">
+            <button
+              class="btn w-1/2 border-2 border-[#d4d6d5] bg-white copy-btn"
+            >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn w-1/2 bg-[#00a63e] text-white">
+            <button class="btn w-1/2 bg-[#00a63e] text-white call-btn">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -201,15 +229,17 @@
                 স্বাস্থ্য
               </p>
             </div>
-            <div class="card-right w-[24px] h-[24px]">
-              <i class="fa-regular fa-heart"></i>
+            <div class="card-right w-[24px] h-[24px] love-btn">
+              <i class="fa-regular fa-heart heart"></i>
             </div>
           </div>
           <div class="flex gap-2 mt-4">
-            <button class="btn w-1/2 border-2 border-[#d4d6d5] bg-white">
+            <button
+              class="btn w-1/2 border-2 border-[#d4d6d5] bg-white copy-btn"
+            >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn w-1/2 bg-[#00a63e] text-white">
+            <button class="btn w-1/2 bg-[#00a63e] text-white call-btn">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -236,15 +266,17 @@
                 সহায়তা
               </p>
             </div>
-            <div class="card-right w-[24px] h-[24px]">
-              <i class="fa-regular fa-heart"></i>
+            <div class="card-right w-[24px] h-[24px] love-btn">
+              <i class="fa-regular fa-heart heart"></i>
             </div>
           </div>
           <div class="flex gap-2 mt-4">
-            <button class="btn w-1/2 border-2 border-[#d4d6d5] bg-white">
+            <button
+              class="btn w-1/2 border-2 border-[#d4d6d5] bg-white copy-btn"
+            >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn w-1/2 bg-[#00a63e] text-white">
+            <button class="btn w-1/2 bg-[#00a63e] text-white call-btn">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -271,15 +303,17 @@
                 সরকারি
               </p>
             </div>
-            <div class="card-right w-[24px] h-[24px]">
-              <i class="fa-regular fa-heart"></i>
+            <div class="card-right w-[24px] h-[24px] love-btn">
+              <i class="fa-regular fa-heart heart"></i>
             </div>
           </div>
           <div class="flex gap-2 mt-4">
-            <button class="btn w-1/2 border-2 border-[#d4d6d5] bg-white">
+            <button
+              class="btn w-1/2 border-2 border-[#d4d6d5] bg-white copy-btn"
+            >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn w-1/2 bg-[#00a63e] text-white">
+            <button class="btn w-1/2 bg-[#00a63e] text-white call-btn">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -306,15 +340,17 @@
                 বিদ্যুৎ
               </p>
             </div>
-            <div class="card-right w-[24px] h-[24px]">
-              <i class="fa-regular fa-heart"></i>
+            <div class="card-right w-[24px] h-[24px] love-btn">
+              <i class="fa-regular fa-heart heart"></i>
             </div>
           </div>
           <div class="flex gap-2 mt-4">
-            <button class="btn w-1/2 border-2 border-[#d4d6d5] bg-white">
+            <button
+              class="btn w-1/2 border-2 border-[#d4d6d5] bg-white copy-btn"
+            >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn w-1/2 bg-[#00a63e] text-white">
+            <button class="btn w-1/2 bg-[#00a63e] text-white call-btn">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -341,15 +377,17 @@
                 এনজিও
               </p>
             </div>
-            <div class="card-right w-[24px] h-[24px]">
-              <i class="fa-regular fa-heart"></i>
+            <div class="card-right w-[24px] h-[24px] love-btn">
+              <i class="fa-regular fa-heart heart"></i>
             </div>
           </div>
           <div class="flex gap-2 mt-4">
-            <button class="btn w-1/2 border-2 border-[#d4d6d5] bg-white">
+            <button
+              class="btn w-1/2 border-2 border-[#d4d6d5] bg-white copy-btn"
+            >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn w-1/2 bg-[#00a63e] text-white">
+            <button class="btn w-1/2 bg-[#00a63e] text-white call-btn">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -376,15 +414,17 @@
                 পরিবহন
               </p>
             </div>
-            <div class="card-right w-[24px] h-[24px]">
-              <i class="fa-regular fa-heart"></i>
+            <div class="card-right w-[24px] h-[24px] love-btn">
+              <i class="fa-regular fa-heart heart"></i>
             </div>
           </div>
           <div class="flex gap-2 mt-4">
-            <button class="btn w-1/2 border-2 border-[#d4d6d5] bg-white">
+            <button
+              class="btn w-1/2 border-2 border-[#d4d6d5] bg-white copy-btn"
+            >
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn w-1/2 bg-[#00a63e] text-white">
+            <button class="btn w-1/2 bg-[#00a63e] text-white call-btn">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -394,23 +434,18 @@
       <div class="p-4 bg-white rounded-[12px] my-10 col-span-3">
         <!-- right top -->
         <div class="flex justify-between items-center mb-5">
-          <h1 class="text-[20px] font-semibold">
+          <h1 class="text-[18px] font-semibold">
             <i class="fa-regular fa-clock"></i> Call History
           </h1>
           <button
-            class="btn bg-[#00a63e] text-white w-[114px] h-[52px] rounded-4xl px-[36px] py-[12px]"
+            id="clear-btn"
+            class="btn bg-[#00a63e] text-white w-[110px] h-[50px] rounded-4xl px-[36px] py-[12px]"
           >
             Clear
           </button>
         </div>
         <!-- right bottom -->
-        <div class="flex justify-between items-center">
-          <div>
-            <h1 class="text-[18px]">জাতীয় জরুরি সেবা</h1>
-            <p class="text-[#5c5c5c]">999</p>
-          </div>
-          <div>11:36:58 AM</div>
-        </div>
+        <div id="call-history-container" class="grid gap-2"></div>
       </div>
     </main>
     <script src="./index.js"></script>
