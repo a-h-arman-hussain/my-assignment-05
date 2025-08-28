@@ -1,39 +1,5 @@
 // love btn
 
-// function getCount(id) {
-//   let countElement = document.getElementById(id);
-//   let countValue = Number(countElement.innerText) || 0;
-//   let totalCount = countValue + 1;
-//   countElement.innerText = totalCount;
-// }
-// document.getElementById("love-btn-1").addEventListener("click", function () {
-//   getCount("count-element");
-// });
-// document.getElementById("love-btn-2").addEventListener("click", function () {
-//   getCount("count-element");
-// });
-// document.getElementById("love-btn-3").addEventListener("click", function () {
-//   getCount("count-element");
-// });
-// document.getElementById("love-btn-4").addEventListener("click", function () {
-//   getCount("count-element");
-// });
-// document.getElementById("love-btn-5").addEventListener("click", function () {
-//   getCount("count-element");
-// });
-// document.getElementById("love-btn-6").addEventListener("click", function () {
-//   getCount("count-element");
-// });
-// document.getElementById("love-btn-7").addEventListener("click", function () {
-//   getCount("count-element");
-// });
-// document.getElementById("love-btn-8").addEventListener("click", function () {
-//   getCount("count-element");
-// });
-// document.getElementById("love-btn-9").addEventListener("click", function () {
-//   getCount("count-element");
-// });
-
 let count = 0;
 const loveBtns = document.getElementsByClassName("love-btn");
 let countElement = document.getElementById("count-element");
@@ -71,8 +37,8 @@ for (let callBtn of callBtns) {
       newEl.innerHTML = `
     <div class="flex justify-between items-center bg-slate-100 p-3 rounded-lg shadow-md">
           <div>
-            <h1 class="text-[18px]">${callerName}</h1>
-            <p class="text-[#5c5c5c]">${callerNumber}</p>
+            <h1 class="text-[18px] font-bold">${callerName}</h1>
+            <p class="text-[#5c5c5c] text-[18px] mt-1">${callerNumber}</p>
           </div>
           <div>${newTime}</div>
         </div>
@@ -99,8 +65,12 @@ const copyBtns = document.getElementsByClassName("copy-btn");
 for (let copyBtn of copyBtns) {
   copyBtn.addEventListener("click", function () {
     const copyCountEl = document.getElementById("copy-count");
+    const callerNumberEl =
+      copyBtn.parentNode.parentNode.children[0].children[0].children[3];
+    const callerNumber = callerNumberEl.innerText.trim();
+    navigator.clipboard.writeText(callerNumber);
     copyCount++;
     copyCountEl.innerText = copyCount;
-    alert("Number copied!");
+    alert("নম্বর কপি হয়েছে " + callerNumber);
   });
 }
