@@ -16,37 +16,58 @@
    <button id="btn2">click</button>
    <button id="btn3">click</button>
    <button id="btn4">click</button>
+
+   JS
+   
    <script>
    document.getElementById("btn1");
    </script>
 2. getElementByClassName :👉🏻
    It is used to select elements of the same class in an HTML file by giving them a class.
    For example:👇🏻
+   ```
+   HTML
+   
    <button class="btn">click</button>
    <button class="btn">click</button>
    <button class="btn">click</button>
    <button class="btn">click</button>
+
+   JS
+   
     <script>
       document.getElementsByClassName("btn");
     </script>
-3. querySelector :👉🏻
+4. querySelector :👉🏻
    It is said to select the first element of the HTML file. Be it a tag name or class or id
    For example:👇🏻
+   ```
+   HTML
+   
    <button class="btn">click</button>
    <button class="btn">click</button>
    <button class="btn">click</button>
    <button class="btn">click</button>
+
+   JS
+   
     <script>
       document.querySelector(".btn");
     </script>
-4. querySelectorAll :👉🏻
+6. querySelectorAll :👉🏻
    It is said to select all elements in an HTML file by tag name or class or id.
    For example:👇🏻
+   ```
+   HTML
+   
     <h1>Hallo - 1</h1>
     <h1>Hallo - 2</h1>
     <h1>Hallo - 3</h1>
     <h1>Hallo - 4</h1>
     <h1>Hallo - 5</h1>
+
+   JS
+   
     <script>
       document.querySelectorAll("h1");
     </script>
@@ -57,6 +78,9 @@
 
 I will first get a container from the HTML as its parent. Then I will take the new element. Then I will append it to its parent.
 For example:👇🏻
+```
+JS
+
 const callHistoryContainer = document.getElementById(
 "call-history-container"
 );
@@ -69,6 +93,7 @@ newEl.innerHTML = `<div class="flex justify-between items-center bg-slate-100 p-
           <div>${newTime}</div>
         </div>`;
 callHistoryContainer.appendChild(newEl);
+```
 
 ## Qsn: 3. What is **Event Bubbling** and how does it work?
 
@@ -76,6 +101,9 @@ callHistoryContainer.appendChild(newEl);
 
 To rotate an element into a branch of an HTML file. That is, like a tree with branches.
 For example:👇🏻
+```
+JS
+
 const callBtns = document.getElementsByClassName("call-btn");
 const callerName =
 callBtn.parentNode.parentNode.children[0].children[0].children[1]
@@ -83,6 +111,7 @@ callBtn.parentNode.parentNode.children[0].children[0].children[1]
 const callerNumber =
 callBtn.parentNode.parentNode.children[0].children[0].children[3]
 .innerText;
+```
 
 ## Qsn: 4. What is **Event Delegation** in JavaScript? Why is it useful?
 
@@ -92,11 +121,14 @@ callBtn.parentNode.parentNode.children[0].children[0].children[3]
 
 1. preventDefault():👉🏻 is called to prevent the default action. That is, the event will occur, but its default action will not be performed.
    For example:👇🏻
+   ```
+   JS
+   
    document.getElementById("btn-login").addEventListener("click", function (e) {
    e.preventDefault();
    const mobileNumber = 8801315315449;
    const pinNumber = 1234;
-
+```
 const mobileNumberValue = document.getElementById("mobile-number").value;
 const mobileNumberValueConvert = parseInt(mobileNumberValue);
 
@@ -114,6 +146,7 @@ alert("Invalid credentials");
 
 // console.log(mobileNumberValueConvert, pinNumberValueConvert);
 });
+```
 
 2. stopPropagation():👉🏻 Called to stop the bubbling of the event. So that it does not go to the parent element.
    For example:👇🏻
