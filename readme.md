@@ -6,9 +6,9 @@
 
 ## Ans:
 
-_1. getElementById :_👉🏻
-**An element in an HTML file is called by selecting a specific ID.**
-_For example:_👇🏻
+1. getElementById :👉🏻
+   **An element in an HTML file is called by selecting a specific ID.**
+   For example:👇🏻
 
 ```
 HTML
@@ -25,9 +25,9 @@ document.getElementById("btn1");
 </script>
 ```
 
-_2. getElementByClassName :_👉🏻
-**It is used to select elements of the same class in an HTML file by giving them a class.**
-_For example:_👇🏻
+2. getElementByClassName :👉🏻
+   **It is used to select elements of the same class in an HTML file by giving them a class.**
+   For example:👇🏻
 
 ```
 HTML
@@ -44,9 +44,9 @@ JS
  </script>
 ```
 
-_3. querySelector :_👉🏻
-**It is said to select the first element of the HTML file. Be it a tag name or class or id**
-_For example:_👇🏻
+3. querySelector :👉🏻
+   **It is said to select the first element of the HTML file. Be it a tag name or class or id**
+   For example:👇🏻
 
 ```
 HTML
@@ -63,9 +63,9 @@ JS
  </script>
 ```
 
-_4. querySelectorAll :_👉🏻
-**It is said to select all elements in an HTML file by tag name or class or id.**
-_For example:_👇🏻
+4. querySelectorAll :👉🏻
+   **It is said to select all elements in an HTML file by tag name or class or id.**
+   For example:👇🏻
 
 ```
 HTML
@@ -88,7 +88,7 @@ JS
 ## Ans:
 
 **I will first get a container from the HTML as its parent. Then I will take the new element. Then I will append it to its parent.**
-_For example:_👇🏻
+For example:👇🏻
 
 ```
 JS
@@ -112,7 +112,7 @@ callHistoryContainer.appendChild(newEl);
 ## Ans:
 
 **To rotate an element into a branch of an HTML file. That is, like a tree with branches.**
-_For example:_👇🏻
+For example:👇🏻
 
 ```
 JS
@@ -130,9 +130,9 @@ callBtn.parentNode.parentNode.children[0].children[0].children[3]
 
 ## Ans:
 
-_Event Delegation:_ 👉🏻
+Event Delegation: 👉🏻
 **It is said to handle the events of the children of that parent element by using addEventListener once in a Parent element of the HTML file.**
-_For example:_👇🏻
+For example:👇🏻
 
 ```
 HTML
@@ -169,9 +169,9 @@ HTML
 
 ## Ans:
 
-_1. preventDefault():_👉🏻
-**is called to prevent the default action. That is, the event will occur, but its default action will not be performed.**
-_For example:_👇🏻
+1. preventDefault():👉🏻
+   **is called to prevent the default action. That is, the event will occur, but its default action will not be performed.**
+   For example:👇🏻
 
 ```
 
@@ -200,9 +200,9 @@ alert("Invalid credentials");
 
 ```
 
-_2. stopPropagation():_👉🏻
-**Called to stop the bubbling of the event. So that it does not go to the parent element.**
-_For example:_👇🏻
+2. stopPropagation():👉🏻
+   **Called to stop the bubbling of the event. So that it does not go to the parent element.**
+   For example:👇🏻
 
 ```
 I couldn't figure out the example😓
