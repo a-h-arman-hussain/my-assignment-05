@@ -9,6 +9,9 @@
 1. getElementById :👉🏻
    An element in an HTML file is called by selecting a specific ID.
    For example:👇🏻
+   ```
+   HTML
+   
    <button id="btn1">click</button>
    <button id="btn2">click</button>
    <button id="btn3">click</button>
