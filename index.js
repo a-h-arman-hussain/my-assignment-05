@@ -26,7 +26,7 @@ for (let callBtn of callBtns) {
       coins -= 20;
       document.getElementById("coin-element").innerText = coins;
 
-      alert("calling " + callerName + " : " + callerNumber);
+      alert("📞calling " + callerName + ":  " + callerNumber + "...");
 
       // call history
       const newTime = new Date().toLocaleTimeString();
@@ -45,7 +45,7 @@ for (let callBtn of callBtns) {
     `;
       callHistoryContainer.appendChild(newEl);
     } else {
-      alert("আপনার কাছে পর্যাপ্ত coins নেই কল করার জন্য!");
+      alert("❌আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
     }
   });
 }
